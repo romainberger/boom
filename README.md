@@ -20,9 +20,11 @@ If you want to install this version you'll need a few steps as I didn't publish 
 
     # clone this repo
     $ git clone git@github.com:romainberger/boom.git
+
     # create the branch and pull it
     $ git co -b did-you-mean
     $ git pull origin did-you-mean
+
     # build and install the gem
     $ gem build boom.gemspec
     $ gem install boom-0.3.0.gem
