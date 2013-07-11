@@ -2,6 +2,8 @@
 
 ## About
 
+This is a modified version of the [official boom](http://holman.github.com/boom), improved with a list of suggestions when you try to copy or open an item that does not exists (for more details on why I did that see my blog post).
+
 boom manages your text snippets on your command line. You can stash away text
 like URLs, canned responses, and important notes and then quickly copy them
 onto your clipboard, ready for pasting.
@@ -11,7 +13,19 @@ For more details about what boom is and how it works, check out
 
 ## Install
 
-    gem install boom
+    # gem install boom
+    # nope
+
+If you want to install this version you'll need a few steps as I didn't publish the gem (Ping me if you want me to). So here is how to get it:
+
+    # clone this repo
+    $ git clone git@github.com:romainberger/boom.git
+    # create the branch and pull it
+    $ git co -b did-you-mean
+    $ git pull origin did-you-mean
+    # build and install the gem
+    $ gem build boom.gemspec
+    $ gem install boom-0.3.0.gem
 
 ## Quick and Dirty
 
@@ -27,6 +41,18 @@ For more details about what boom is and how it works, check out
 And that's just a taste! I know, you're salivating, I can hear you from here.
 (Why your saliva is noisy is beyond me.) Check out the [full list of
 commands](https://github.com/holman/boom/wiki/Commands).
+
+
+### Did you mean this?
+
+Here is the only thing added to the basic boom version. Let's pretend you want to copy an item called `ridiculously-long-thing`. But you quite remember the name. Let's see what happens:
+
+    # How is this thing called again?
+    $ boom copy ridiculously-long-stuff
+    Couldn't find ridiculously-long-stuff
+    Did you mean this?
+        ridiculously-long-thing
+    # Oooooooh yeah
 
 ## Contribute
 
