@@ -47,7 +47,7 @@ commands](https://github.com/holman/boom/wiki/Commands).
 
 ### Did you mean this?
 
-Here is the only thing added to the basic boom version. Let's pretend you want to copy an item called `ridiculously-long-thing`. But you quite remember the name. Let's see what happens:
+Here is the only thing added to the basic boom version. Let's pretend you want to copy an item called `ridiculously-long-thing`. But you don't quite remember the name. Let's see what happens:
 
     # How is this thing called again?
     $ boom copy ridiculously-long-stuff
