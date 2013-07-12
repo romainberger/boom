@@ -2,7 +2,7 @@
 
 ## About
 
-This is a modified version of the [official boom](http://holman.github.com/boom), improved with a list of suggestions when you try to copy or open an item that does not exists (for more details on why I did that see my blog post).
+This is a modified version of the [official boom](http://holman.github.com/boom), improved with a list of suggestions when you try to copy or open an item that does not exists (for more details on why I did that [see my blog post](https://medium.com/open-source-life/73489c30e49)).
 
 boom manages your text snippets on your command line. You can stash away text
 like URLs, canned responses, and important notes and then quickly copy them
