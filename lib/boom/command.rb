@@ -397,7 +397,7 @@ module Boom
       def find_closest(search)
         results = Array.new
         items = storage.items.each do |item|
-          if Levenshtein.distance(search, item.name) < 7
+          if Levenshtein.distance(search, item.name) < 4
             results.push(item.name)
           end
         end
